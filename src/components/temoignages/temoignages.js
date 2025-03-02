@@ -9,7 +9,7 @@ const Temoignages = () => {
       name: "Jean Dupont",
       role: "Développeur Web",
       rating: 4.5,
-      comment: "Un service de notification exceptionnellement fiable et facile à intégrer.",
+      comment: "An exceptionally reliable and easy-to-integrate product management notification service.",
       date: "2024-01-15"
     },
     {
@@ -17,7 +17,7 @@ const Temoignages = () => {
       name: "Marie Lefebvre",
       role: "Cheffe de Projet",
       rating: 5,
-      comment: "AlertX a révolutionné notre communication d'équipe. Hautement recommandé !",
+      comment: "ProductX has revolutionized our team communication. Highly recommended for product management!",
       date: "2024-02-20"
     }
   ]);
@@ -69,7 +69,7 @@ const Temoignages = () => {
   return (
     <div className="temoignages-page">
       <div className="temoignages-header">
-        <h1>Témoignages <span className="highlight">Utilisateurs</span></h1>
+        <h1>User <span className="highlight">Testimonials</span></h1>
         <div className="overall-rating">
           <h2>{calculateAverageRating()} / 5 
             <span className="rating-stars">
@@ -87,13 +87,13 @@ const Temoignages = () => {
 
       <div className="temoignages-content">
         <div className="review-form">
-          <h2>Donnez votre avis</h2>
+          <h2>Share Your Feedback</h2>
           <form onSubmit={handleSubmitReview}>
             <div className="form-group">
               <input 
                 type="text" 
                 name="name" 
-                placeholder="Votre nom" 
+                placeholder="Your name" 
                 value={newReview.name}
                 onChange={handleInputChange}
                 required 
@@ -101,7 +101,7 @@ const Temoignages = () => {
               <input 
                 type="text" 
                 name="role" 
-                placeholder="Votre rôle" 
+                placeholder="Your Role" 
                 value={newReview.role}
                 onChange={handleInputChange}
               />
@@ -122,13 +122,13 @@ const Temoignages = () => {
             </div>
             <textarea 
               name="comment"
-              placeholder="Votre commentaire"
+              placeholder="Your comment"
               value={newReview.comment}
               onChange={handleInputChange}
               required
             ></textarea>
             <button type="submit" className="submit-review-btn">
-              Soumettre mon avis
+            Submit My Feedback
             </button>
           </form>
         </div>

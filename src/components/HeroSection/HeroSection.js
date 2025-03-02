@@ -38,8 +38,8 @@ const HeroSection = () => {
             <br />At Your Fingertips
           </h1>
           <p className="subtitle">
-          Instantly connect your teams with our multi-channel notification API.  
-          WhatsApp, Email, SMS, Telegram – A unified solution for all your communications.
+          Instantly connect your teams with our multi-channel product management API.
+          Task management, updates, notifications - A unified solution for all your team communications.
           </p>
           <div className="hero-cta">
             <button className="btn btn-primary" onClick={StartDocumentation}>

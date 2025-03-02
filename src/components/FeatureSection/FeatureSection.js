@@ -2,41 +2,39 @@
 import React from "react";
 import "./FeatureSection.css";
 
-const FeaturesSection = () => {
-  const features = [
-    { 
-      icon: "fab fa-whatsapp", 
-      title: "Notifications WhatsApp", 
-      desc: "Envoyez des messages instantanés et personnalisés directement sur WhatsApp. Atteignez vos utilisateurs là où ils sont le plus actifs.",
-      color: "#25D366"
-    },
-    { 
-      icon: "fas fa-envelope", 
-      title: "Notifications Email", 
-      desc: "Créez des emails transactionnels et marketing élaborés avec un design responsive et des modèles personnalisables.",
-      color: "#3498db"
-    },
-    { 
-      icon: "fas fa-sms", 
-      title: "Notifications SMS", 
-      desc: "Envoyez des alertes critiques et des codes de vérification avec une livraison instantanée et un taux de lecture élevé.",
-      color: "#2ecc71"
-    },
-    { 
-      icon: "fas fa-bell", 
-      title: "Notifications Push", 
-      desc: "Engagez vos utilisateurs avec des notifications push intelligentes pour les applications web et mobiles.",
-      color: "#9b59b6"
-    }
-  ];
-
+const FeaturesSection = () => {const features = [
+  { 
+    icon: "fas fa-cogs", 
+    title: "Create, Modify, View, and Delete a Resource", 
+    desc: "Easily manage resources by creating, editing, viewing, and deleting them with a user-friendly interface.",
+    color: "#f39c12"
+  },
+  { 
+    icon: "fas fa-cogs", 
+    title: "Create, Modify, View, and Delete a Service", 
+    desc: "Effortlessly create, modify, view, and delete services to ensure your offerings are always up to date.",
+    color: "#1abc9c"
+  },
+  { 
+    icon: "fa-solid fa-sitemap", 
+    title: "Create Service or Resource Variations and Associate with Agencies", 
+    desc: "Create variations of services or resources and easily associate them with specific agencies for better management.",
+    color: "#e74c3c"
+  },
+  { 
+    icon: "fas fa-store", 
+    title: "Post Products on the Marketplace", 
+    desc: "Post products to the marketplace, set sales prices, define sales points, and configure delivery options to streamline your sales process.",
+    color: "#3498db"
+  }
+];
   return (
     <section className="features">
       <div className="features-container">
         <div className="features-header">
-          <h2 className="section-title">Nos Fonctionnalités</h2>
+          <h2 className="section-title">Our Features</h2>
           <p className="section-subtitle">
-            Une solution unifiée pour notifier vos utilisateurs de maniere efficace.
+          A unique solution to manage products efficiently.
           </p>
         </div>
         <div className="feature-list">
