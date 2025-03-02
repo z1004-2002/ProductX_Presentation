@@ -4,42 +4,43 @@ import './about.css';
 const About = () => {
   const aboutSections = [
     {
-      title: "Notre Mission",
+      title: "Our Mission",
       icon: "fa-bullseye",
       paragraphs: [
-        "AlertX est né de la conviction que la communication digitale doit être simple, rapide et efficace. Notre mission est de révolutionner la façon dont les entreprises interagissent avec leurs utilisateurs.",
-        "Nous comprenons que chaque notification est une opportunité de créer une connexion significative. C'est pourquoi nous avons développé une plateforme qui permet aux entreprises d'envoyer des messages personnalisés et instantanés à travers plusieurs canaux.",
-        "Notre objectif est de transformer la communication numérique en un processus transparent, où chaque message compte et chaque interaction a un impact."
-      ]
+        "ProductX was created with the vision that product management tools should be intuitive, agile, and impactful. Our mission is to reshape the way product teams collaborate and innovate.",
+        "We recognize that every decision, every update, and every iteration is an opportunity to drive meaningful progress. That's why we developed a platform that empowers product teams to streamline workflows, manage roadmaps, and deliver value faster across multiple channels.",
+        "Our goal is to transform product management into a seamless and transparent process, where every move aligns with the bigger picture, and every action contributes to building better products."
+      ]      
     },
     {
-      title: "Notre Vision Technologique",
+      title: "Our Technological Vision",
       icon: "fa-eye",
       paragraphs: [
-        "Nous voyons un avenir où la communication digitale est totalement intégrée, intelligente et centrée sur l'utilisateur. AlertX n'est pas simplement un outil de notification, c'est une plateforme qui anticipe et répond aux besoins dynamiques de la communication moderne.",
-        "Notre vision repose sur trois piliers fondamentaux : l'innovation technologique, la personnalisation avancée et l'accessibilité universelle. Nous croyons que la technologie doit simplifier la vie, pas la compliquer.",
-        "Nous investissons continuellement dans la recherche et le développement pour rester à la pointe de l'innovation en matière de communication digitale."
+        "We envision a future where product management is fully integrated, intelligent, and user-centric. ProductX is not just a tool; it's a platform that anticipates and adapts to the dynamic needs of modern product teams.",
+        "Our vision is built on three core pillars: technological innovation, advanced customization, and universal accessibility. We believe technology should simplify, not complicate, the product development process.",
+        "We are committed to continuous investment in research and development to remain at the forefront of innovation in product management tools."
       ]
-    },
+    },    
     {
-      title: "Nos Avantages Uniques",
+      title: "Our Unique Advantages",
       icon: "fa-rocket",
       paragraphs: [
-        "AlertX se distinguant par sa capacité à offrir une solution de notification véritablement multicanal. Que ce soit via SMS, WhatsApp, Email ou Notifications Push, nous garantissons une intégration fluide et une expérience utilisateur exceptionnelle.",
-        "Contrairement aux solutions traditionnelles, nous offrons une personnalisation poussée. Nos algorithmes intelligents permettent d'adapter chaque message au profil et aux préférences de chaque utilisateur.",
-        "Avec des temps de livraison ultra-rapides, une sécurité de pointe et une fiabilité à toute épreuve, AlertX devient le partenaire technologique indispensable pour toute entreprise soucieuse de maintenir une communication de qualité."
+        "ProductX stands out for its ability to offer a truly integrated product management solution. Whether it's for managing roadmaps, sprint planning, or team collaboration, we ensure seamless integration and an exceptional user experience.",
+        "Unlike traditional solutions, we offer deep customization. Our intelligent algorithms allow each product process to be tailored to the unique needs and preferences of each team or project.",
+        "With ultra-fast delivery times, cutting-edge security, and unbeatable reliability, ProductX becomes the essential technological partner for any business aiming to maintain high-quality product development."
       ]
     }
+    
   ];
 
   return (
     <div className="about-section">
       <div className="about-header">
         <h2 className="section-title">
-          About <span className="title-highlight">AlertX</span>
+          About <span className="title-highlight">ProductX</span>
         </h2>
         <p className="section-subtitle">
-          Transforming Digital Communication, One Notification at a Time
+          Manage your product very easily, with ProductX
         </p>
       </div>
       

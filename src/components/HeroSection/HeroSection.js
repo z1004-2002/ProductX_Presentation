@@ -34,31 +34,31 @@ const HeroSection = () => {
       <div className="hero-content">
         <div className="hero-text">
           <h1 className="title">
-            <span className="title-highlight">Service de Gestion des produits</span> 
-            <br />à Portée de Main
+            <span className="title-highlight">Product Management Service</span> 
+            <br />At Your Fingertips
           </h1>
           <p className="subtitle">
-            Connectez instantanément vos équipes avec notre API de notifications multicanales. 
-            WhatsApp, Email, SMS, Telegram - Une solution unifiée pour toutes vos communications.
+          Instantly connect your teams with our multi-channel notification API.  
+          WhatsApp, Email, SMS, Telegram – A unified solution for all your communications.
           </p>
           <div className="hero-cta">
             <button className="btn btn-primary" onClick={StartDocumentation}>
               <span className="btn-icon">🚀</span>
-              Commencer Gratuitement
+              Get Started for Free
             </button>
             <button className="btn btn-secondary" onClick={openDocumentation}>
               <span className="btn-icon">📡</span>
-              Documentation API
+              API Documentation
             </button>
           </div>
           <div className="hero-stats">
             <div className="stat">
               <span className="stat-number">+100</span>
-              <span className="stat-label">Intégrations</span>
+              <span className="stat-label">Integrations</span>
             </div>
             <div className="stat">
               <span className="stat-number">99.99%</span>
-              <span className="stat-label">Fiabilité</span>
+              <span className="stat-label">Reliability</span>
             </div>
           </div>
         </div>

@@ -4,12 +4,12 @@ import './developpers.css';
 const Developpers = () => {
   const developerSections = [
     {
-      title: "Intégration Facile de l'API",
+      title: "Easy API Integration",
       icon: "fa-code",
       paragraphs: [
-        "AlertX fournit une API robuste et conviviale qui peut être intégrée sans effort dans n'importe quel écosystème d'application. Notre documentation complète et nos SDK prennent en charge plusieurs langages de programmation, y compris JavaScript, Python, Java, et plus encore.",
-        "Avec seulement quelques lignes de code, les développeurs peuvent implémenter des capacités de notification puissantes, réduisant ainsi le temps et la complexité du développement. Notre API RESTful garantit une communication fluide et un minimum de surcharge.",
-        "Nous offrons des exemples de code étendus, une documentation interactive et un support dédié pour aider les développeurs à démarrer rapidement et efficacement."
+        "ProductX provides a robust and user-friendly API that can be effortlessly integrated into any product ecosystem. Our comprehensive documentation and SDKs support multiple programming languages, including JavaScript, Python, Java, and more.",
+        "With just a few lines of code, developers can implement powerful product management capabilities, reducing development time and complexity. Our RESTful API ensures smooth communication and minimal overhead.",
+        "We offer extensive code samples, interactive documentation, and dedicated support to help developers get started quickly and efficiently."
       ]
     },
     {

@@ -43,8 +43,8 @@ const Header = () => {
         
         <nav className={`navigation ${isMenuOpen ? 'menu-open' : ''}`}>
           <ul className="nav-links">
-            <li><Link to="/" onClick={toggleMenu}>Accueil</Link></li>
-            <li><a href="#features" onClick={(e) => { handleFeaturesScroll(e); toggleMenu(); }}>Fonctionnalités</a></li>
+            <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+            <li><a href="#features" onClick={(e) => { handleFeaturesScroll(e); toggleMenu(); }}>Features</a></li>
             {/* <li><Link to="/temoignages" onClick={toggleMenu}>Témoignages</Link></li>       */}
           </ul>
         </nav>
