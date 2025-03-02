@@ -45,7 +45,7 @@ const FeaturesSection = () => {const features = [
               </div>
               <h3 className="feature-title">{feature.title}</h3>
               <p className="feature-description">{feature.desc}</p>
-              <a href="https://service-de-notication-documentation.vercel.app/AboutRacine/Whatsapp_Meta/configure" className="feature-link">Découvrir →</a>
+              <a href="https://product-x-documentation.vercel.app/about/Getting_Start/quickStart" className="feature-link">Découvrir →</a>
             </div>
           ))}
         </div>
