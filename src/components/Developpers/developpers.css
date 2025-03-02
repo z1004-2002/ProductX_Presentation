@@ -1,0 +1,122 @@
+:root {
+  --primary-color: #2c3e50;     /* Deep blue-gray */
+  --secondary-color: #ff9a5f;   /* Soft, muted light orange */
+  --accent-color: #ecf0f1;      /* Very light gray */
+  --text-color: #34495e;        /* Soft dark blue-gray */
+  --background-color: #ffffff;  /* Pure white */
+}
+
+.developpers-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 6rem 40px;
+  background-color: var(--background-color);
+}
+
+.developpers-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.title-highlight {
+  color: var(--secondary-color);
+}
+
+.section-subtitle {
+  color: rgba(52, 73, 94, 0.7);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.developpers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.developpers-card {
+  background-color: var(--accent-color);
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(44, 62, 80, 0.1);
+  padding: 2.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.developpers-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(44, 62, 80, 0.15);
+}
+
+.developpers-icon-container {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  border-radius: 50%;
+}
+
+.developpers-icon-container i {
+  color: var(--secondary-color);
+  font-size: 4rem;
+}
+
+.developpers-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.developpers-title {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.developpers-paragraph {
+  color: rgba(52, 73, 94, 0.8);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.developpers-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .developpers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .developpers-section {
+    padding: 4rem 20px;
+  }
+
+  .developpers-icon-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .developpers-icon-container i {
+    font-size: 3rem;
+  }
+}

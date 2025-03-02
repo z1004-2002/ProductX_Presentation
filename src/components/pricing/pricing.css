@@ -1,0 +1,252 @@
+:root {
+  --primary-color: #2c3e50;     /* Deep blue-gray */
+  --secondary-color: #ff9a5f;   /* Soft, muted light orange */
+  --accent-color: #ecf0f1;      /* Very light gray */
+  --text-color: #34495e;        /* Soft dark blue-gray */
+  --background-color: #ffffff;  /* Pure white */
+  --highlight-color: #3498db;   /* Bright blue */
+  --section-separator: #f8f9fa; /* Light gray for section separation */
+}
+
+.pricing-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 6rem 40px;
+  background-color: var(--section-separator);
+  border-top: 1px solid rgba(52, 73, 94, 0.1);
+  border-bottom: 1px solid rgba(52, 73, 94, 0.1);
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.title-highlight {
+  color: var(--secondary-color);
+}
+
+.section-subtitle {
+  color: rgba(52, 73, 94, 0.7);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.billing-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.discount-badge {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: var(--highlight-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.pricing-card {
+  background-color: var(--background-color);
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(44, 62, 80, 0.1);
+  padding: 2.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.pricing-card.recommended {
+  transform: scale(1.05);
+  box-shadow: 0 20px 45px rgba(44, 62, 80, 0.2);
+}
+
+.recommended-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.pricing-title {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.pricing-description {
+  color: rgba(52, 73, 94, 0.7);
+  margin-bottom: 1.5rem;
+}
+
+.pricing-price {
+  margin-bottom: 2rem;
+}
+
+.price-amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.price-period {
+  color: rgba(52, 73, 94, 0.7);
+  font-size: 1rem;
+}
+
+.pricing-features {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.pricing-features li {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.pricing-features li i {
+  color: var(--highlight-color);
+  margin-right: 0.75rem;
+}
+
+.pricing-cta {
+  background-color: var(--highlight-color);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+
+.pricing-cta:hover {
+  background-color: #2980b9;
+}
+
+.pricing-footer {
+  text-align: center;
+  margin-top: 3rem;
+  color: rgba(52, 73, 94, 0.7);
+}
+
+.pricing-footer a {
+  color: var(--highlight-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pricing-section::before,
+.pricing-section::after {
+  content: '';
+  display: block;
+  height: 50px;
+  background: linear-gradient(
+    to right, 
+    transparent, 
+    var(--section-separator), 
+    transparent
+  );
+}
+
+@media (max-width: 1024px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-card.recommended {
+    transform: none;
+  }
+
+  .pricing-section {
+    padding: 4rem 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-section::before,
+  .pricing-section::after {
+    height: 30px;
+  }
+
+  .pricing-section {
+    padding: 4rem 20px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
