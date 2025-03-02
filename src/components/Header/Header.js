@@ -6,9 +6,50 @@ const Header = () => {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleAboutScroll = (e) => {
+    e.preventDefault();
+    const featuresSection = document.querySelector('.about-section');
+    if (featuresSection) {
+      featuresSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   const handleFeaturesScroll = (e) => {
     e.preventDefault();
     const featuresSection = document.querySelector('.features');
+    if (featuresSection) {
+      featuresSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+  const handleDeveloperScroll = (e) => {
+    e.preventDefault();
+    const featuresSection = document.querySelector('.developpers-section');
+    if (featuresSection) {
+      featuresSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+  const handlePricingScroll = (e) => {
+    e.preventDefault();
+    const featuresSection = document.querySelector('.pricing-section');
+    if (featuresSection) {
+      featuresSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+  const handleTestiScroll = (e) => {
+    e.preventDefault();
+    const featuresSection = document.querySelector('.temoignages-page');
     if (featuresSection) {
       featuresSection.scrollIntoView({ 
         behavior: 'smooth',
@@ -44,8 +85,11 @@ const Header = () => {
         <nav className={`navigation ${isMenuOpen ? 'menu-open' : ''}`}>
           <ul className="nav-links">
             <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+            <li><a href="#about-section" onClick={(e) => { handleAboutScroll(e); toggleMenu(); }}>About</a></li>
+            <li><a href="#about-section" onClick={(e) => { handleDeveloperScroll(e); toggleMenu(); }}>For Developers</a></li>
             <li><a href="#features" onClick={(e) => { handleFeaturesScroll(e); toggleMenu(); }}>Features</a></li>
-            {/* <li><Link to="/temoignages" onClick={toggleMenu}>Témoignages</Link></li>       */}
+            <li><a href="#about-section" onClick={(e) => { handlePricingScroll(e); toggleMenu(); }}>Pricing</a></li>
+            <li><a href="#about-section" onClick={(e) => { handleTestiScroll(e); toggleMenu(); }}>User Testimonials</a></li>
           </ul>
         </nav>
         
