@@ -45,7 +45,7 @@ const FeaturesSection = () => {const features = [
               </div>
               <h3 className="feature-title">{feature.title}</h3>
               <p className="feature-description">{feature.desc}</p>
-              <a href="https://product-x-documentation.vercel.app/about/Getting_Start/quickStart" className="feature-link">Découvrir →</a>
+              <a href="https://gateway.yowyob.com/webjars/swagger-ui/index.html?urls.primaryName=Resource+Service" className="feature-link">Découvrir →</a>
             </div>
           ))}
         </div>
