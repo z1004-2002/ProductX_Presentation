@@ -45,7 +45,7 @@ const Contributors = () => {
           Our<span className="title-highlight"> Contributors</span>
         </h1>
         <p className="section-subtitle">
-          Les innovateurs derrière AlertX, unis par la passion de la notification intelligente
+          Les innovateurs derrière ProductX, unis par la passion de la notification intelligente
         </p>
       </div>
       
